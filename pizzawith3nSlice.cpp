@@ -11,6 +11,7 @@ private:
         int notTake = find(slices, index + 1, slicePending, endIndex, dp);
         
         return dp[index][slicePending] = max(take, notTake);
+    
     }
 public:
     int maxSizeSlices(vector<int>& slices) {
